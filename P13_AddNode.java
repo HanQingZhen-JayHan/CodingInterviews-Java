@@ -30,7 +30,7 @@ public class P13_AddNode {
 			System.out.println();
 		}
 	}
-	/*
+
 	public static void main(String [] args)
 	{
 
@@ -61,5 +61,5 @@ public class P13_AddNode {
 		//exception test		
 		System.out.println("\nException Test:");
 	}
-	*/
+
 }
