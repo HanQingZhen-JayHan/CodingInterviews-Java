@@ -36,7 +36,7 @@ public class Search {
     }
 
     public int binarySearchRecursion(int[] array, int start, int end, int target) {//suppose the array is ordered
-        if (end == start && array[start] != target) {
+        if (end < start) {
             error = true;
             return -1;
         }
@@ -44,9 +44,9 @@ public class Search {
         if (array[mid] == target)
             return mid;
         else if (array[mid] > target)
-            end = mid;
+            end = mid - 1;
         else
-            start = mid;
+            start = mid + 1;
         return binarySearchRecursion(array, start, end, target);
     }
 
